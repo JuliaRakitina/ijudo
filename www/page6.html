@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calendar | Ijudo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Calendar" id="page6">
+      <div data-role="panel" id="panel7" data-position="left" data-display="reveal" data-theme="a">
+          <ul data-role="listview" data-divider-theme="h" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Divider
+              </li>
+              <li data-theme="a">
+                  <a href="" data-transition="slide">
+                      Button
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel8" data-position="left" data-display="reveal" data-theme="a">
+          <ul data-role="listview" data-divider-theme="h" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Divider
+              </li>
+              <li data-theme="a">
+                  <a href="" data-transition="slide">
+                      Button
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="b" data-role="header">
+          <h3>
+              iJUDO
+          </h3>
+          <h2>
+              Calendar
+          </h2>
+          <a data-role="button" data-rel="back" href="page2.html" data-icon="back" data-iconpos="left" class="ui-btn-left">
+              Back
+          </a>
+      </div>
+      <div data-role="content">
+          <div data-controltype="htmlblock">
+              <table id="monthtable_large" width="100%" cellspacing="0" cellpadding="0" border="1">
+                  <tbody>
+                      <tr>
+                          <td class="keretes" id="napok">
+                              <span class="napok">
+                                  Mo
+                              </span>
+                          </td>
+                          <td class="keretes" id="napok">
+                              <span class="napok">
+                                  Tu
+                              </span>
+                          </td>
+                          <td class="keretes" id="napok">
+                              <span class="napok">
+                                  We
+                              </span>
+                          </td>
+                          <td class="keretes" id="napok">
+                              <span class="napok">
+                                  Th
+                              </span>
+                          </td>
+                          <td class="keretes" id="napok">
+                              <span class="napok">
+                                  Fr
+                              </span>
+                          </td>
+                          <td class="keretes" id="napok">
+                              <span class="napok">
+                                  Sa
+                              </span>
+                          </td>
+                          <td class="keretes" id="napok">
+                              <span class="napok">
+                                  Su
+                              </span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="125">
+                               
+                          </td>
+                          <td width="125" align="center" class="keretes" bgcolor="#DCDCDC">
+                              <span class="napok">
+                                  1
+                              </span>
+                          </td>
+                          <td width="125" align="center" class="keretes" bgcolor="#DCDCDC">
+                              <span class="napok">
+                                  2
+                              </span>
+                          </td>
+                          <td width="125" align="center" class="keretes" bgcolor="#DCDCDC">
+                              <span class="napok">
+                                  3
+                              </span>
+                          </td>
+                          <td width="125" align="center" class="keretes" bgcolor="#DCDCDC">
+                              <span class="napok">
+                                  4
+                              </span>
+                          </td>
+                          <td width="125" align="center" class="keretes" bgcolor="#DCDCDC">
+                              <span class="napok">
+                                  5
+                              </span>
+                          </td>
+                          <td width="125" align="center" class="keretes" bgcolor="#DCDCDC">
+                              <span class="napok">
+                                  6
+                              </span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td class="keretes" align="center" height="25" bgcolor="" colspan="3">
+                              <div id="event" style="background-color:;" onmouseover="ddrivetip('&lt;p&gt;&lt;b&gt;Grand Prix - Tashkent&lt;/b&gt;&lt;br&gt;&lt;br&gt;Start: 2013-10-04&lt;br&gt;End: 2013-10-06&lt;br&gt;Tashkent, 3085 &lt;small&gt;(IJF)&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;')" onmouseout="hideddrivetip()">
+                                  <a href="/Galery/cikk1803/cikk2364-Infomutat">
+                                      <b>
+                                          Grand Prix - Tashkent
+                                      </b>
+                                  </a>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  7
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  8
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  9
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  10
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  11
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  12
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  13
+                              </span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td class="keretes" align="center" height="25" bgcolor="#BFDAF9" colspan="2">
+                              <div id="event" style="background-color:#BFDAF9;" onmouseover="ddrivetip('&lt;p&gt;&lt;b&gt;European Open - Minsk&lt;/b&gt;&lt;br&gt;&lt;br&gt;Start: 2013-10-12&lt;br&gt;End: 2013-10-13&lt;br&gt;Minsk, 1302 &lt;small&gt;(IJF)&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;')" onmouseout="hideddrivetip()">
+                                  <a href="/cikk1811/cikk1821/cikk2410-Infomutat">
+                                      <b>
+                                          European Open - Minsk
+                                      </b>
+                                  </a>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  14
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  15
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  16
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  17
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  18
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  19
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  20
+                              </span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td class="keretes" align="center" height="25" bgcolor="" colspan="2">
+                              <div id="event" style="background-color:;" onmouseover="ddrivetip('&lt;p&gt;&lt;b&gt;Combat Games Team Event&lt;/b&gt;&lt;br&gt;&lt;br&gt;Start: 2013-10-19&lt;br&gt;End: 2013-10-20&lt;br&gt;St-Petersburg, 1937 &lt;small&gt;(IJF)&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;')" onmouseout="hideddrivetip()">
+                                  <a href="/Galery/cikk1814/cikk2390-Infomutat">
+                                      <b>
+                                          Combat Games Team Event
+                                      </b>
+                                  </a>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td class="keretes" align="center" height="25" bgcolor="#BFDAF9" colspan="2">
+                              <div id="event" style="background-color:#BFDAF9;" onmouseover="ddrivetip('&lt;p&gt;&lt;b&gt;European Open - Glasgow&lt;/b&gt;&lt;br&gt;&lt;br&gt;Start: 2013-10-19&lt;br&gt;End: 2013-10-20&lt;br&gt;Glasgow, 1568 &lt;small&gt;(IJF)&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;')" onmouseout="hideddrivetip()">
+                                  <a href="/cikk1811/cikk1812/cikk2357-Infomutat">
+                                      <b>
+                                          European Open - Glasgow
+                                      </b>
+                                  </a>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td class="keretes" align="center" height="25" bgcolor="#BFDAF9" colspan="2">
+                              <div id="event" style="background-color:#BFDAF9;" onmouseover="ddrivetip('&lt;p&gt;&lt;b&gt;European Open - Rome&lt;/b&gt;&lt;br&gt;&lt;br&gt;Start: 2013-10-19&lt;br&gt;End: 2013-10-20&lt;br&gt;Rome, 1682 &lt;small&gt;(IJF)&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;')" onmouseout="hideddrivetip()">
+                                  <a href="/cikk1811/cikk1813/cikk2356-Infomutat">
+                                      <b>
+                                          European Open - Rome
+                                      </b>
+                                  </a>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td class="keretes" align="center" height="25" bgcolor="#E8B323" colspan="2">
+                              <div id="event" style="background-color:#E8B323;" onmouseover="ddrivetip('&lt;p&gt;&lt;b&gt;World Championship  KATA - Kyoto&lt;/b&gt;&lt;br&gt;&lt;br&gt;Start: 2013-10-19&lt;br&gt;End: 2013-10-20&lt;br&gt;Kyoto, 3096 &lt;small&gt;(IJF)&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;')" onmouseout="hideddrivetip()">
+                                  <a href="/cikk1768/cikk1775/cikk2411-Infomutat">
+                                      <b>
+                                          World Championship KATA - Kyoto
+                                      </b>
+                                  </a>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  21
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  22
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  23
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  24
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  25
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  26
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  27
+                              </span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td class="keretes" align="center" height="25" bgcolor="#3DC641" colspan="5">
+                              <div id="event" style="background-color:#3DC641;" onmouseover="ddrivetip('&lt;p&gt;&lt;b&gt;World Championship Junior - Ljublana&lt;/b&gt;&lt;br&gt;&lt;br&gt;Start: 2013-10-23&lt;br&gt;End: 2013-10-27&lt;br&gt;Ljublana, 1998 &lt;small&gt;(IJF)&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;')" onmouseout="hideddrivetip()">
+                                  <a href="/cikk1768/cikk1770/cikk2368-Infomutat">
+                                      <b>
+                                          World Championship Junior - Ljublana
+                                      </b>
+                                  </a>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  28
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  29
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  30
+                              </span>
+                          </td>
+                          <td width="125" align="center" bgcolor="#DCDCDC" class="keretes">
+                              <span class="napok">
+                                  31
+                              </span>
+                          </td>
+                          <td width="125" align="center">
+                              <span class="napok">
+                              </span>
+                          </td>
+                          <td width="125" align="center">
+                              <span class="napok">
+                              </span>
+                          </td>
+                          <td width="125" align="center">
+                              <span class="napok">
+                              </span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td class="keretes" align="center" height="25" bgcolor="#FF8A00" colspan="2">
+                              <div id="event" style="background-color:#FF8A00;" onmouseover="ddrivetip('&lt;p&gt;&lt;b&gt;Grand Prix - Qingdao&lt;/b&gt;&lt;br&gt;&lt;br&gt;Start: 2013-10-30&lt;br&gt;End: 2013-11-01&lt;br&gt;Qingdao, 3089 &lt;small&gt;(IJF)&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;')" onmouseout="hideddrivetip()">
+                                  <a href="/Galery/cikk1803/cikk2376-Infomutat">
+                                      <b>
+                                          Grand Prix - Qingdao
+                                      </b>
+                                  </a>
+                              </div>
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                          <td height="25">
+                               
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
