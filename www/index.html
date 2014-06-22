@@ -22,17 +22,17 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.2/theme-classic/theme-classic.css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-
-
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 
     <title>iJudo</title>
 </head>
 <body>
-<div data-role="page">
+<div data-role="page" data-theme="c" id="indexPage">
 
     <div data-role="header" data-theme="b">
         <h1>iJudo</h1>
@@ -41,7 +41,7 @@
 
 
     <div data-role="content">
-    <ul data-role="listview" data-inset="true" data-filter="false" data-theme="b">
+        <ul data-role="listview" data-inset="true" data-filter="false" data-theme="b">
             <li data-theme="b">
                 <a href="page5.html" data-transition="slide">
                     Menu
@@ -62,7 +62,7 @@
                     Search
                 </a>
             </li>
-    </ul>
+        </ul>
     </div>
     <!-- /content -->
 

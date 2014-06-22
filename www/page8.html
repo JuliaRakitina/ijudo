@@ -1,106 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>News | Ijudo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta charset="utf-8">
+    <title>News | Ijudo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <link href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-  <script src="js/scripts.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+
 </head>
 <body>
-  <div data-role="page" data-control-title="News" id="page8">
-      <div data-theme="b" data-role="header">
-          <h3>
-              iJUDO
-          </h3>
-          <h2>
-              Last News
-          </h2>
-          <a data-role="button" data-rel="back" href="page9.html" data-icon="back" data-iconpos="left" class="ui-btn-left">
-              Back
-          </a>
-      </div>
-      <div data-role="content" style="padding: 10px">
-          <div id="testNoId" data-controltype="htmlblock">
-              <p>
-                  This is test
-              </p>
-          </div>
-          <script>
-              $("#testNoId").load('test.html', function() {
-                  console.info('Load was performed.');
-                  $('#testNoId').trigger('create');
-              });
-          </script>
-          <div data-controltype="textblock">
-              <table class="mceItemTable">
-                  <tbody>
-                      <tr>
-                          <td>
-                              <p>
-                                  <strong>
-                                      <img src="http://www.intjudo.eu/upload/2013_10/20/138226281318623385/120.jpg" style="float: left; margin: 5px;" width="120" height="73" data-mce-src="http://www.intjudo.eu/upload/2013_10/20/138226281318623385/120.jpg" data-mce-style="float: left; margin: 5px;"/>
-                                      The Kata World Championships entered  another dimension during the
-                                      fifth edition. For the first time  in history, the  competition
-                                      was held outside of Europe, and for the first time it came back to the
-                                      mother land of judo.  
-                                      <br/>
-                                  </strong>
-                              </p>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td>
-                              <p>
-                                  <strong>
-                                      <img src="http://www.intjudo.eu/upload/2013_10/19/138219200875758926/120.jpg" width="120" height="73" style="float: left; margin: 5px;" data-mce-src="http://www.intjudo.eu/upload/2013_10/19/138219200875758926/120.jpg" data-mce-style="float: left; margin: 5px;"/>
-                                      IJF and SportAccord President Mr. Marius Vizer led a World Combat Games
-                                      delegation as they visited Republican Clinic Hospital Orphanage as part
-                                      of the event's cultural programme on Saturday morning.
-                                      <br/>
-                                  </strong>
-                              </p>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td>
-                              <p>
-                                  <strong>
-                                      <img src="http://www.intjudo.eu/upload/2013_10/18/138211165258595843/tokyo2020.jpg" width="120" height="73" style="float: left; margin: 5px;" data-mce-src="http://www.intjudo.eu/upload/2013_10/18/138211165258595843/tokyo2020.jpg" data-mce-style="float: left; margin: 5px;"/>
-                                      IJF and SportAccord President Mr. Marius Vizer has been appointed as a
-                                      member of the IOC Coordination Commission of the Tokyo 2020 Olympic Games
-                                      by IOC President Mr. Thomas Bach.
-                                      <br/>
-                                  </strong>
-                              </p>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td>
-                              <p>
-                                  <strong>
-                                      <img src="http://www.intjudo.eu/upload/2013_10/19/138219661332661542/medallistsweb.jpeg" width="120" height="73" style="float: left; margin: 5px;" data-mce-src="http://www.intjudo.eu/upload/2013_10/19/138219661332661542/medallistsweb.jpeg" data-mce-style="float: left; margin: 5px;"/>
-                                      <b>
-                                          The opening day of the 2013 World Combat Games marked the start of the
-                                          team judo competition on Saturday at the St Petersburg Sports and Concert
-                                          Complex.
-                                      </b>
-                                      <br/>
-                                  </strong>
-                              </p>
-                          </td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-      </div>
-  </div>
+<div data-role="page" data-control-title="News" id="page8" data-theme="c">
+    <script>
+
+        $(document).on('pageshow', '#page8', function(){
+            $.mobile.loading('show');
+            //alert('Pageinit');
+        });
+
+        $("#newsFeed").load('http://xp-service.com/iJudo/fb_feed.php', function () {
+            console.info('Load was performed.');
+            $.mobile.loading('hide');
+            $('#newsFeed').trigger('create');
+        });
+    </script>
+    <div data-theme="b" data-role="header">
+        <h3>
+            iJUDO
+        </h3>
+
+        <h2>
+            Last News
+        </h2>
+        <a data-role="button" data-rel="back" href="page9.html" data-icon="back" data-iconpos="left"
+           class="ui-btn-left">
+            Back
+        </a>
+    </div>
+    <div data-role="content" style="padding: 10px">
+        <div id="newsFeed" data-controltype="htmlblock">
+        </div>
+
+        <!--   <div data-controltype="textblock">
+               <table class="mceItemTable">
+                   <tbody>
+                       <tr>
+                           <td>
+                               <p>
+                                   <strong>
+                                       <img src="http://www.intjudo.eu/upload/2013_10/20/138226281318623385/120.jpg" style="float: left; margin: 5px;" width="120" height="73" data-mce-src="http://www.intjudo.eu/upload/2013_10/20/138226281318623385/120.jpg" data-mce-style="float: left; margin: 5px;"/>
+                                       The Kata World Championships entered  another dimension during the
+                                       fifth edition. For the first time  in history, the  competition
+                                       was held outside of Europe, and for the first time it came back to the
+                                       mother land of judo.  
+                                       <br/>
+                                   </strong>
+                               </p>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                               <p>
+                                   <strong>
+                                       <img src="http://www.intjudo.eu/upload/2013_10/19/138219200875758926/120.jpg" width="120" height="73" style="float: left; margin: 5px;" data-mce-src="http://www.intjudo.eu/upload/2013_10/19/138219200875758926/120.jpg" data-mce-style="float: left; margin: 5px;"/>
+                                       IJF and SportAccord President Mr. Marius Vizer led a World Combat Games
+                                       delegation as they visited Republican Clinic Hospital Orphanage as part
+                                       of the event's cultural programme on Saturday morning.
+                                       <br/>
+                                   </strong>
+                               </p>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                               <p>
+                                   <strong>
+                                       <img src="http://www.intjudo.eu/upload/2013_10/18/138211165258595843/tokyo2020.jpg" width="120" height="73" style="float: left; margin: 5px;" data-mce-src="http://www.intjudo.eu/upload/2013_10/18/138211165258595843/tokyo2020.jpg" data-mce-style="float: left; margin: 5px;"/>
+                                       IJF and SportAccord President Mr. Marius Vizer has been appointed as a
+                                       member of the IOC Coordination Commission of the Tokyo 2020 Olympic Games
+                                       by IOC President Mr. Thomas Bach.
+                                       <br/>
+                                   </strong>
+                               </p>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                               <p>
+                                   <strong>
+                                       <img src="http://www.intjudo.eu/upload/2013_10/19/138219661332661542/medallistsweb.jpeg" width="120" height="73" style="float: left; margin: 5px;" data-mce-src="http://www.intjudo.eu/upload/2013_10/19/138219661332661542/medallistsweb.jpeg" data-mce-style="float: left; margin: 5px;"/>
+                                       <b>
+                                           The opening day of the 2013 World Combat Games marked the start of the
+                                           team judo competition on Saturday at the St Petersburg Sports and Concert
+                                           Complex.
+                                       </b>
+                                       <br/>
+                                   </strong>
+                               </p>
+                           </td>
+                       </tr>
+                   </tbody>
+               </table>
+           </div>-->
+    </div>
+</div>
 </body>
 </html>
